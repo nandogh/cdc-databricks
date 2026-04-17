@@ -8,3 +8,17 @@ databricks_cdc_project/
 │   └── cdc_pipeline.py     ← pipeline completo
 │
 ├── README.md               ← instruções
+
+
+Volumes/
+ └── main_cdc/
+      └── default/
+           ├── landing/sales/        (CSV original)
+           ├── checkpoints/
+           ├── schema/
+           
+Catalog:
+ └── main_cdc
+      ├── bronze.sales_raw
+      ├── silver.sales_cdc
+      └── gold.sales_analytics
