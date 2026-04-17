@@ -22,3 +22,12 @@ Catalog:
       ├── bronze.sales_raw
       ├── silver.sales_cdc
       └── gold.sales_analytics
+
+
+Arquitetura Final:
+
+Bronze (raw, CDC, append-only)
+   ↓
+Silver (tratado, deduplicado, merge/upsert)
+   ↓
+Gold (KPIs, agregações, consumo BI)
